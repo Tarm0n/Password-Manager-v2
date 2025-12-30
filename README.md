@@ -1,9 +1,10 @@
-Local Secure Password Manager
+# Local Secure Password Manager
 
 A lightweight, terminal-based password manager built in Python. This tool stores your credentials locally using industry-standard authenticated encryption, ensuring your data remains private and secure on your own machine.
 
 It features a "Zero-Knowledge" architecture where your Master Password is never stored or written to disk.
-🔐 Security Architecture
+
+## 🔐 Security Architecture
 
 This project does not roll its own crypto. It relies on the reputable cryptography library and implements standard, robust primitives:
 
@@ -15,7 +16,7 @@ This project does not roll its own crypto. It relies on the reputable cryptograp
 
     Secure Randomness: All secrets and passwords are generated using Python's secrets module (CSPRNG), not the standard random library.
 
-🚀 Features
+## 🚀 Features
 
     Local Storage: All data is stored in a local SQLite database (passwords.db).
 
@@ -25,8 +26,8 @@ This project does not roll its own crypto. It relies on the reputable cryptograp
 
     Hidden Inputs: Uses getpass to ensure passwords are not displayed on screen while typing.
 
-🛠️ Installation
-1. Prerequisites
+## 🛠️ Installation
+### 1. Prerequisites
 
 Ensure you have Python 3 installed.
 
@@ -36,19 +37,17 @@ Linux Users: You must install a system clipboard utility for the copy-paste feat
 
     X11: sudo pacman -S xclip (Arch) or sudo apt install xclip (Debian/Ubuntu)
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 Install the required Python packages:
-Bash
 
-pip install cryptography pyperclip
+    pip install cryptography pyperclip
 
-📖 Usage
+## 📖 Usage
 
 Run the main script to start the application:
-Bash
 
-python main.py
+    python main.py
 
 First Run
 
@@ -62,11 +61,11 @@ Main Menu
 
     [1] Add Password: Save a new credential. You will provide a Service Name (e.g., "Google"), a Username, and the Password.
 
-    [2] Get Password: Retrieve a password. The decrypted password will be printed to the screen and automatically copied to your clipboard.
+    [2] Get Password: Retrieve a password. The decrypted password will be automatically copied to your clipboard.
 
     [3] Generate Password: create a secure, random string of a specified length (letters + punctuation).
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This tool is designed for personal use and educational purposes. While it implements strong, standard encryption algorithms (AES-GCM, PBKDF2), users should exercise standard security precautions:
 
@@ -76,6 +75,6 @@ This tool is designed for personal use and educational purposes. While it implem
 
     Ensure your machine is free of malware/keyloggers.
 
-📄 License
+## 📄 License
 
 MIT License
