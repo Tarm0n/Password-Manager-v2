@@ -4,7 +4,7 @@ A lightweight, terminal-based password manager built in Python. This tool stores
 
 It features a "Zero-Knowledge" architecture where your Master Password is never stored or written to disk.
 
-## 🔐 Security Architecture
+## Security Architecture
 
 This project does not roll its own crypto. It relies on the reputable cryptography library and implements standard, robust primitives:
 
@@ -16,7 +16,7 @@ This project does not roll its own crypto. It relies on the reputable cryptograp
 
     Secure Randomness: All secrets and passwords are generated using Python's secrets module (CSPRNG), not the standard random library.
 
-## 🚀 Features
+## Features
 
     Local Storage: All data is stored in a local SQLite database (passwords.db).
 
@@ -26,7 +26,7 @@ This project does not roll its own crypto. It relies on the reputable cryptograp
 
     Hidden Inputs: Uses getpass to ensure passwords are not displayed on screen while typing.
 
-## 🛠️ Installation
+## Installation
 ### 1. Prerequisites
 
 Ensure you have Python 3 installed.
@@ -43,7 +43,7 @@ Install the required Python packages:
 
     pip install cryptography pyperclip
 
-## 📖 Usage
+## Usage
 
 Run the main script to start the application:
 
@@ -75,6 +75,6 @@ This tool is designed for personal use and educational purposes. While it implem
 
     Ensure your machine is free of malware/keyloggers.
 
-## 📄 License
+## License
 
 MIT License
